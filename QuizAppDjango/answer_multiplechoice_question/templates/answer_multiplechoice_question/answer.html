@@ -1,0 +1,22 @@
+{% load static %}
+
+<h1> {{ question.question_text }} </h1>
+
+<form method="get" action="{% url 'answer_multiplechoice_question:verify' question.id %}"><br>
+
+
+    <input id="answer_1" type=checkbox value=1 name="checks1">
+    <label for="answer_1"> {{ question.answer_text1 }}</label><br>
+
+    <input id="answer_2" type=checkbox value=1 name="checks2">
+    <label for="answer_2"> {{ question.answer_text2 }}</label><br>
+
+    <input id="answer_3" type=checkbox value=1 name="checks3">
+    <label for="answer_3"> {{ question.answer_text3 }}</label><br>
+
+    <input id="answer_4" type=checkbox value=1 name="checks4">
+    <label for="answer_4"> {{ question.answer_text4 }}</label><br>
+
+    <input id="verifyAnswer" type=submit value="Fertig" name="submit">
+
+</form>

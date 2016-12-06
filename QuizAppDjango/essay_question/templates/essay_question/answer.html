@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+</head>
+<body>
+
+
+<h1> {{ question.question_text }} </h1>
+<form method="post" action="{% url 'essay_question:verify' question.id%}"><br>
+    <input type=text placeholder="Enter Your answer here!" name="answer" required autofocus autocomplete="False">
+    <br><br>
+    <input id="verifyAnswer" type=submit value="verify" name="verify">
+</form>
+</body>

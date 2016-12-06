@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+<form action="{% url 'essay_question:addquestion' %}">
+    <input type="submit" value="Create Question">
+</form>
+
+<form action="{% url 'essay_question:answer' 3 %}">
+    <input type="submit" value="Answer Question">
+</form>
+</body>
+</html>
