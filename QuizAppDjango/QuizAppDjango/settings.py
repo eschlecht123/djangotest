@@ -38,9 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'quiz',
-    'answer_singlechoice_question.apps.EssayQuestionConfig',
-    'answer_true_false_question.apps.EssayQuestionConfig',
-    'answer_multiplechoice_question.apps.EssayQuestionConfig',
+    'answer_singlechoice_question',
+    'answer_true_false_question',
+    'answer_multiplechoice_question',
+    'essay_question',
 ]
 
 MIDDLEWARE = [
